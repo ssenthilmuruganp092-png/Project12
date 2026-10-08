@@ -1,0 +1,210 @@
+/* Reset */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial,sans-serif;
+}
+
+body{
+  background:#f5f5f5;
+}
+
+/* Container */
+
+.container{
+  width:90%;
+  margin:auto;
+  padding:20px;
+}
+
+.container h1{
+  text-align:center;
+  margin:20px 0;
+}
+
+/* Search */
+
+.search-box{
+  display:flex;
+  justify-content:center;
+  margin:20px;
+}
+
+.search-box input{
+  width:450px;
+  padding:12px;
+  border-radius:8px;
+  border:1px solid #ccc;
+  font-size:16px;
+}
+
+/* Book Grid */
+
+.book-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+/* Card */
+
+.book-card{
+  background:white;
+  border-radius:10px;
+  padding:15px;
+  text-align:center;
+  box-shadow:0 3px 10px rgba(0,0,0,.2);
+}
+
+.book-card img{
+  width:180px;
+  height:240px;
+  object-fit:cover;
+}
+
+.book-card h3{
+  margin:10px 0;
+}
+
+.book-card p{
+  margin:6px 0;
+}
+
+.card-buttons{
+  margin-top:15px;
+}
+
+.card-buttons button{
+  padding:8px 14px;
+  margin:5px;
+  cursor:pointer;
+  border:none;
+  border-radius:6px;
+  background:#007bff;
+  color:white;
+}
+
+.card-buttons button:hover{
+  background:#0056b3;
+}
+
+/* Form */
+
+.form-container{
+  width:450px;
+  margin:30px auto;
+  background:white;
+  padding:25px;
+  border-radius:10px;
+  box-shadow:0 3px 10px rgba(0,0,0,.2);
+}
+
+.form-container h2{
+  text-align:center;
+  margin-bottom:20px;
+}
+
+.form-container form{
+  display:flex;
+  flex-direction:column;
+}
+
+.form-container input,
+.form-container textarea{
+  margin:10px 0;
+  padding:10px;
+  border-radius:6px;
+  border:1px solid gray;
+}
+
+.form-container textarea{
+  height:120px;
+}
+
+.form-container button{
+  padding:12px;
+  border:none;
+  border-radius:6px;
+  background:green;
+  color:white;
+  cursor:pointer;
+}
+
+/* Details */
+
+.details-container{
+  display:flex;
+  gap:40px;
+  padding:40px;
+  align-items:flex-start;
+}
+
+.details-container img{
+  width:300px;
+  height:420px;
+  object-fit:cover;
+}
+
+.details{
+  flex:1;
+}
+
+.details p{
+  margin:12px 0;
+}
+
+.details button{
+  padding:10px 20px;
+  margin-top:20px;
+}
+
+/* Delete Modal */
+
+.modal-overlay{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,.5);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.modal{
+  background:white;
+  padding:30px;
+  border-radius:10px;
+  width:350px;
+  text-align:center;
+}
+
+.modal-buttons{
+  margin-top:20px;
+}
+
+.modal-buttons button{
+  margin:10px;
+  padding:10px 18px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.details-container{
+flex-direction:column;
+align-items:center;
+}
+
+.form-container{
+width:95%;
+}
+
+.search-box input{
+width:100%;
+}
+
+}
